@@ -139,8 +139,8 @@
 }
 
 html, body {
-  background: #F0F0F0;
-  color: #0D0D0D;
+  background: #272727;
+  color: #fff;
   font-family: 'Lato', sans-serif;
 }
 
@@ -177,9 +177,9 @@ header {
   transition: all 0.3s ease;
 }
 .header--active {
-  background: #E6E6E6;
-  padding: 18px 0;
-  box-shadow: 0 0 18px #c4c4c4;
+  background: #373737;
+  padding: 15px 0;
+  box-shadow: 0 0 25px #3a3a3a;
 }
 header .container {
   display: flex;
@@ -194,7 +194,7 @@ header .container {
   display: flex;
 }
 .header__list-link {
-  color: #0D0D0D;
+  color: #fff;
   margin-left: 22px;
   font-size: 17px;
   letter-spacing: 0.1px;
@@ -246,6 +246,7 @@ header .container {
   bottom: 6px;
   left: -5px;
 }
+
 
 /*! BURGER POPUP */
 .burger-popup {
@@ -299,6 +300,7 @@ header .container {
 }
 .hero__offer {
   width: 57%;
+  z-index: 2;
 }
 .hero__title {
   font-weight: 600;
@@ -320,13 +322,14 @@ header .container {
   font-weight: 600;
   letter-spacing: 0.7px;
   transition: all 0.3s ease;
-  box-shadow: 0 3px 20px #c3c3c3;
+  box-shadow: 0 3px 15px #1f1f1f;
   position: relative;
   bottom: 0;
   will-change: bottom;
+  z-index: 2;
 }
 .hero__button:hover {
-  box-shadow: 0px 3px 20px #b768db;
+  box-shadow: 0px 2px 15px #7D19B1;
   bottom: 6px;
 }
 .hero__img-block {
@@ -341,10 +344,10 @@ header .container {
 }
 .hero__img-bg {
   width: 60%;
-  height: 50%;
-  border-radius: 50%;
-  background: #D4A7FF;
-  box-shadow: 0 -20px 300px 10px #7427bc;
+  height: 120px;
+  border-radius: 50px;
+  background: #5900AF;
+  box-shadow: 40px -20px 800px 120px #5900AF;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -361,6 +364,7 @@ header .container {
 .features .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .big-info-block {
   text-align: center;
@@ -368,8 +372,11 @@ header .container {
   border-radius: 25px;
   box-sizing: border-box;
 }
+.big-info-block, .double-info-block {
+  box-shadow: 0 0 15px #131313;
+}
 .features__block-1 {
-  background: url('../img/features1.jpg') center/cover no-repeat;
+  background: url('../img/features1-dark.png') center/cover no-repeat;
 }
 .features__block-title {
   font-size: 24px;
@@ -392,10 +399,10 @@ header .container {
   padding: 28px 20px 200px;
 }
 .features__block-2 {
-  background: url('../img/features2.jpg') right/cover no-repeat;
+  background: url('../img/features2-dark.png') right/cover no-repeat;
 }
 .features__block-3 {
-  background: url('../img/features3.jpg') left/cover no-repeat;
+  background: url('../img/features3-dark.png') left/cover no-repeat;
 }
 .double-info-block:last-child {
   text-align: right;
@@ -812,10 +819,6 @@ header .container {
 .aboutus__block-4 {background: url('../img/aboutus4.jpg') left/cover no-repeat;}
 .aboutus__block-5 {background: url('../img/aboutus5.jpg') left/cover no-repeat;}
 .aboutus__block-6 {background: url('../img/aboutus6.jpg') center/cover no-repeat;}
-
-.big-info-block, .double-info-block {
-  box-shadow: 0 0 15px #e7e7e7;
-}
 
 .aboutus .features__quote {
   margin: 29px auto 0;
