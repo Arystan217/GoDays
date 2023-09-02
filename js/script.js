@@ -154,10 +154,6 @@ if (backgroundValue.includes("rgb(255, 255, 255)")) {
 
 document.querySelector(".mode-switcher").addEventListener("click", e => {
   e.preventDefault();
-
-  // delte intial css styles
-  const existingInitialStyleLink = document.querySelector('link[href="css/style.css"]');
-  if (existingInitialStyleLink) {existingInitialStyleLink.remove()}
   
   // add light only css styles
   document.head.appendChild(lightCSSLink);
@@ -174,6 +170,10 @@ document.querySelector(".mode-switcher").addEventListener("click", e => {
     if (existingDarkLink) {existingDarkLink.remove()} 
   }
   document.head.appendChild(adaptiveCSSLink);
+
+  // delte intial css styles
+  const existingInitialStyleLink = document.querySelector('link[href="css/style.css"]');
+  if (existingInitialStyleLink) {existingInitialStyleLink.remove()}
 });
 
 
