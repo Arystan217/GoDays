@@ -21,31 +21,31 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Home</a>
+            <a href="#" data-scroll-to="hero" class="header__list-link">Home</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Futures</a>
+            <a href="#" data-scroll-to="features" class="header__list-link">Futures</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Pricing</a>
+            <a href="#" data-scroll-to="prices" class="header__list-link">Pricing</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Calculator</a>
+            <a href="#" data-scroll-to="calculator" class="header__list-link">Calculator</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Testimonials</a>
+            <a href="#" data-scroll-to="testimonials" class="header__list-link">Testimonials</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Join Waitlist</a>
+            <a href="#" data-scroll-to="waitlist" class="header__list-link">Join Waitlist</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">About Us</a>
+            <a href="#" data-scroll-to="aboutus" class="header__list-link">About Us</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">FAQs</a>
+            <a href="#" data-scroll-to="faqs" class="header__list-link">FAQs</a>
           </li>
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Privacy Policy</a>
+            <a href="#" data-scroll-to="footer" class="header__list-link">Privacy Policy</a>
           </li>
         </ul>
       </nav>
@@ -66,7 +66,7 @@
         <div class="hero__offer">
           <h1 class="hero__title">GoDays is a revolutionary AI-powered tool designed to elevate employee well-being, boost productivity.</h1>
           <p class="hero__text">With a mission to transform workplaces for the better, GoDays addresses the critical challenge of employee burnout while fostering a culture of growth and success.</p>
-          <a href="#" class="hero__button">Join Waitlist</a>
+          <a href="#" data-scroll-to="waitlist" class="hero__button">Join Waitlist</a>
         </div>
 
         <div class="hero__img-block">
@@ -151,7 +151,14 @@
 
         <div class="pricing__quote">
           <div class="pricing__quote-img-block">
-            <img src="img/ico/note.svg" alt="" class="pricing__quote-img">
+            <svg class="pricing__quote-img quote-img" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="13.2061" width="460" height="28" fill="#F0F0F0"/>
+              <rect x="13.25" y="9.03943" width="28.7083" height="37.5417" rx="4.41667" stroke="#CA5AD2" stroke-width="3"/>
+              <path d="M33.125 22.2894V17.8728" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 20.0811H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 28.9144H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 37.7477H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+            </svg>
           </div>
 
           <p class="pricing__quote-text">Prices listed are per employee and billed monthly. Custom pricing available for larger enterprises. Contact us for more information and get started on your journey to a more productive and balanced workplace.</p>
@@ -331,11 +338,18 @@
 
         <p class="features__quote">Experience the power of GoDays for yourself and discover how our platform can transform your organization. Together, let's shape a thriving workforce and unlock the limitless possibilities of a brighter future.</p>
 
-        <a href="#" class="hero__button">Join Waitlist</a>
+        <a href="#" data-scroll-to="waitlist" class="hero__button">Join Waitlist</a>
 
         <div class="pricing__quote">
           <div class="pricing__quote-img-block">
-            <img src="img/ico/note.svg" alt="" class="pricing__quote-img">
+            <svg class="pricing__quote-img quote-img" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="13.2061" width="460" height="28" fill="#F0F0F0"/>
+              <rect x="13.25" y="9.03943" width="28.7083" height="37.5417" rx="4.41667" stroke="#CA5AD2" stroke-width="3"/>
+              <path d="M33.125 22.2894V17.8728" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 20.0811H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 28.9144H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 37.7477H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+            </svg>
           </div>
 
           <p class="pricing__quote-text">Prices listed are per employee and billed monthly. Custom pricing available for larger enterprises. Contact us for more information and get started on your journey to a more productive and balanced workplace.</p>
@@ -349,34 +363,41 @@
         <p class="subtitle">Welcome to our FAQs section, where we address the most common queries and concerns about GoDays. We believe in transparency and want to ensure that you have all the information you need to make an informed decision about our platform.</p>
 
         <div class="faqs__content">
-          <div class="faqs__question">What is GoDays?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">What is GoDays?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">GoDays is an AI-powered platform designed to prevent employee burnout and identify hidden leaders within organizations. Our innovative algorithms analyze keyboard and mouse usage, proactively detecting signs of burnout and distributing tasks intelligently to optimize workloads.</div>
 
-          <div class="faqs__question">How does GoDays prevent burnout?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">How does GoDays prevent burnout?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">GoDays adapts workload based on employees' keyboard and mouse usage, ensuring a healthy work-life balance. By reducing the risk of burnout and providing timely support, GoDays promotes employee well-being and enhances productivity.</div>
 
-          <div class="faqs__question">Can GoDays integrate with existing CRM and task management systems?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">Can GoDays integrate with existing CRM and task management systems?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">Absolutely! GoDays seamlessly integrates with your current CRM and task management tools, ensuring a smooth transition without disrupting established workflows. Enhance productivity and collaboration with our user-friendly platform that fits right into your organizational processes.</div>
 
-          <div class="faqs__question">Is GoDays suitable for all types of organizations?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">Is GoDays suitable for all types of organizations?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">Yes, GoDays is designed to cater to businesses of all sizes and industries. Whether you're a small startup or a large enterprise, our platform can be customized to suit your unique needs and requirements.</div>
 
-          <div class="faqs__question">How can I join the GoDays Waitlist?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">How can I join the GoDays Waitlist?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">Joining the GoDays Waitlist is easy! Simply navigate to the "Join Waitlist" menu, fill out the form with your name, email, and organization details, and you'll be among the first to get early access and exclusive rewards. Or click on this button.</div>
 
-          <div class="faqs__question faqs__question">What kind of support can I expect from GoDays?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question faqs__question">What kind of support can I expect from GoDays?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer faqs__answer">We take pride in providing exceptional customer support. Our dedicated team is always ready to assist you with any questions or issues you may encounter. From onboarding to ongoing usage, we're here to ensure a seamless experience with GoDays.</div>
 
-          <div class="faqs__question">Is my data safe with GoDays?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">Is my data safe with GoDays?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">Absolutely. We take data security and privacy seriously. Your information is securely stored and protected, adhering to the highest industry standards and best practices.</div>
 
-          <div class="faqs__question">Can I customize GoDays to fit my organization's unique needs?<img class="faqs__arrow" src="img/ico/arrow-down.svg" alt=""></div>
+          <div class="faqs__question">Can I customize GoDays to fit my organization's unique needs?<svg class="faqs__arrow" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.25 13.125L17.5 21.875L8.75 13.125" stroke-width="1.45833"/></svg></div>
           <div class="faqs__answer">Yes, we understand that every organization is different. GoDays can be tailored to meet your specific requirements, ensuring a personalized experience that aligns with your business goals.</div>
         </div>
 
         <div class="pricing__quote">
           <div class="pricing__quote-img-block">
-            <img src="img/ico/note.svg" alt="" class="pricing__quote-img">
+            <svg class="pricing__quote-img quote-img" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="13.2061" width="460" height="28" fill="#F0F0F0"/>
+              <rect x="13.25" y="9.03943" width="28.7083" height="37.5417" rx="4.41667" stroke="#CA5AD2" stroke-width="3"/>
+              <path d="M33.125 22.2894V17.8728" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 20.0811H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 28.9144H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+              <path d="M8.8335 37.7477H17.6668" stroke="#CA5AD2" stroke-width="3" stroke-linecap="round"/>
+            </svg>
           </div>
 
           <p class="pricing__quote-text">Prices listed are per employee and billed monthly. Custom pricing available for larger enterprises. Contact us for more information and get started on your journey to a more productive and balanced workplace.</p>
@@ -386,7 +407,7 @@
   </main>
 
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="footer__top">
         <div class="footer__top-offer">
@@ -401,31 +422,31 @@
         <nav class="footer__top-nav">
           <ul class="footer__top-list">
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Home</a>
+              <a href="#" data-scroll-to="hero" class="footer__top-list-link">Home</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Futures</a>
+              <a href="#" data-scroll-to="features" class="footer__top-list-link">Futures</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Pricing</a>
+              <a href="#" data-scroll-to="prices" class="footer__top-list-link">Pricing</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Calculator</a>
+              <a href="#" data-scroll-to="calculator" class="footer__top-list-link">Calculator</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Testimonials</a>
+              <a href="#" data-scroll-to="testimonials" class="footer__top-list-link">Testimonials</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Join Waitlist</a>
+              <a href="#" data-scroll-to="waitlist" class="footer__top-list-link">Join Waitlist</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">About Us</a>
+              <a href="#" data-scroll-to="aboutus" class="footer__top-list-link">About Us</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">FAQs</a>
+              <a href="#" data-scroll-to="faqs" class="footer__top-list-link">FAQs</a>
             </li>
             <li class="footer__top-list-item">
-              <a href="#" class="footer__top-list-link">Privacy Policy</a>
+              <a href="#" data-scroll-to="footer" class="footer__top-list-link">Privacy Policy</a>
             </li>
           </ul>
         </nav>
@@ -437,7 +458,7 @@
         <nav class="footer__bottom-nav">
           <ul class="footer__bottom-list">
             <li class="footer__bottom-list-item">
-              <a href="#" class="footer__bottom-list-link">Dark Mode</a>
+              <a href="#" class="footer__bottom-list-link mode-switcher">Dark Mode</a>
             </li>
             <span class="footer__bottom-separator-mobile"></span>
             <li class="footer__bottom-list-item">
@@ -464,31 +485,31 @@
         <nav class="burger-popup__nav">
           <ul class="burger-popup__list">
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Home</a>
+              <a href="#" data-scroll-to="hero" class="burger-popup__link">Home</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Futures</a>
+              <a href="#" data-scroll-to="features" class="burger-popup__link">Futures</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Pricing</a>
+              <a href="#" data-scroll-to="prices" class="burger-popup__link">Pricing</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Calculator</a>
+              <a href="#" data-scroll-to="calculator" class="burger-popup__link">Calculator</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Testimonials</a>
+              <a href="#" data-scroll-to="testimonials" class="burger-popup__link">Testimonials</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Join Waitlist</a>
+              <a href="#" data-scroll-to="waitlist" class="burger-popup__link">Join Waitlist</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">About Us</a>
+              <a href="#" data-scroll-to="aboutus" class="burger-popup__link">About Us</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">FAQs</a>
+              <a href="#" data-scroll-to="faqs" class="burger-popup__link">FAQs</a>
             </li>
             <li class="burger-popup__item">
-              <a href="#" class="burger-popup__link">Privacy Policy</a>
+              <a href="#" data-scroll-to="footer" class="burger-popup__link">Privacy Policy</a>
             </li>
           </ul>
         </nav>
@@ -497,6 +518,8 @@
   </div>
 
 
+
   <script src="js/script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

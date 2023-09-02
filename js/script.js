@@ -2,7 +2,7 @@ const header = document.querySelector('header');
 const burgerMenuIcon = document.querySelector('.burger-menu-icon')
 const burgerPopup = document.querySelector(".burger-popup")
 
-// BURGER MENU
+//! BURGER MENU
 let burgerPopupState = false
 burgerMenuIcon.addEventListener('click', function() {
   burgerMenuIcon.classList.toggle('burger-menu-icon--active')
@@ -19,7 +19,6 @@ burgerMenuIcon.addEventListener('click', function() {
   }
 });
 
-
 window.addEventListener('scroll', function() {
   
   if (window.scrollY > 0 && burgerPopupState == false) {
@@ -28,6 +27,28 @@ window.addEventListener('scroll', function() {
     header.classList.remove('header--active');
   }
 });
+
+const burgerPopupList = document.querySelector(".burger-popup__list");
+
+burgerPopupList.addEventListener("click", function(event) {
+  if (event.target.classList.contains("burger-popup__link")) {
+    document.querySelector(".burger-popup").classList.add("burger-popup--closed");
+  }
+
+  burgerMenuIcon.classList.toggle('burger-menu-icon--active')
+  if (burgerPopupState == true) {
+    burgerPopupState = false
+    if (window.scrollY > 0) {
+      header.classList.add('header--active');
+    }
+  }
+  else {
+    burgerPopupState = true
+    header.classList.remove('header--active');
+  }
+});
+
+
 
 
 //! PRICING
@@ -76,3 +97,88 @@ questions.forEach(el => {
     }
   })
 })
+
+
+
+//! smooth scrolling
+const links = document.querySelectorAll('a[data-scroll-to]');
+
+links.forEach(link => {
+  link.addEventListener("click", function(e) {
+    let padding = 110; // Adjust the padding value as needed
+    e.preventDefault();
+    const targetClass = this.getAttribute("data-scroll-to");
+    const targetElement = document.querySelector("." + targetClass);
+
+    if (targetClass == "hero") {padding = 2000}
+
+    if (targetElement) {
+      const targetOffset = targetElement.offsetTop - padding;
+
+      window.scrollTo({
+        top: targetOffset,
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
+
+//! switching dark/light mode 
+const darkCSSLink = document.createElement('link');
+darkCSSLink.setAttribute('rel', 'stylesheet');
+darkCSSLink.setAttribute('href', 'css/style-dark.css');
+
+const lightCSSLink = document.createElement('link');
+lightCSSLink.setAttribute('rel', 'stylesheet');
+lightCSSLink.setAttribute('href', 'css/style-light.css');
+
+const adaptiveCSSLink = document.createElement('link');
+adaptiveCSSLink.setAttribute('rel', 'stylesheet'); // Fix: Change 'lightCSSLink' to 'adaptiveCSSLink'
+adaptiveCSSLink.setAttribute('href', 'css/adaptive.css'); // Fix: Change 'lightCSSLink' to 'adaptiveCSSLink'
+
+const computedStyles = window.getComputedStyle(document.querySelector('.pricing__tab--active'));
+const backgroundValue = computedStyles.background;
+
+let state;
+
+if (backgroundValue.includes("rgb(255, 255, 255)")) {
+  console.log("it was light")
+  state = "dark";
+  document.querySelector(".mode-switcher").textContent = "Light mode";
+} else {
+  console.log("it was dark")
+  state = "light";
+  document.querySelector(".mode-switcher").textContent = "Dark mode";
+}
+
+document.querySelector(".mode-switcher").addEventListener("click", e => {
+  e.preventDefault();
+
+  // delte intial css styles
+  const existingInitialStyleLink = document.querySelector('link[href="css/style.css"]');
+  if (existingInitialStyleLink) {existingInitialStyleLink.remove()}
+  
+  // add light only css styles
+  document.head.appendChild(lightCSSLink);
+
+  if (state === "light") {
+    state = "dark";
+    document.querySelector(".mode-switcher").textContent = "Light mode";
+    document.head.appendChild(darkCSSLink);
+  } else {
+    state = "light";
+    document.querySelector(".mode-switcher").textContent = "Dark mode";
+
+    const existingDarkLink = document.querySelector('link[href="css/style-dark.css"]');
+    if (existingDarkLink) {existingDarkLink.remove()} 
+  }
+  document.head.appendChild(adaptiveCSSLink);
+});
+
+
+
+
+
+
+
